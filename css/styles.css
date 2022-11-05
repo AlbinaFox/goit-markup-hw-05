@@ -136,7 +136,7 @@ color: var(--black);
 .site-nav .active::after{
     position: absolute;
     left: 0px;
-    bottom: 0px;
+    bottom: -1px;
     content: "";
     display: block;
     width: 100%;
@@ -541,7 +541,7 @@ color: var(--button-white-color);
     width: 100%;
     height: 100%;
     transform: translateY(100%);
-background-color: rgba(33,150, 243, 0.9);
+background-color: rgba(33, 150, 243, 0.9);
     transition: transform var(--trns-fast);
 }
 
@@ -550,12 +550,20 @@ background-color: rgba(33,150, 243, 0.9);
 }
 
 .overlay-portfolio{
-    font-weight: 700;
-    padding-left: 20px;
-    padding-right: 20px;
-    letter-spacing: 0,02em;
+position: absolute;
+    left: 24px;
+    right: 24px;
+    top: 63px;
+    bottom: 63px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(28 / 18);
+    letter-spacing: 0.03em;
     color: var(--button-white-color);
+    display: flex;
+    justify-content: center;
 }
+
 
 .thumb{
     position: relative;
@@ -957,8 +965,8 @@ fill:var(--background-color);
  outline:4px;
  }
 
-.overlay-box {
-position: absolute;
+   .overlay-box {
+   position: absolute;
    width: 370px;
     height: 70px;
     border-radius: 0px;
@@ -993,8 +1001,12 @@ position: absolute;
     background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(2px);
 
+    opacity: 1;
     visibility: visible;
     transition: opacity 250ms, visibility 250ms linear;
+    pointer-events: initial;
+    z-index: var(--idx-backdrop);
+    pointer-events: inherit;
 }
 
 .backdrop.is-hidden {
@@ -1015,7 +1027,11 @@ position: absolute;
     border-radius: 4px;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+transition: transform 300ms ease-out;
+}
 
+.backdrop.is-hidden .modal{
+    transform: translateX(-50%) translateY(-65%);
 }
 
 .close-btn {
@@ -1031,9 +1047,11 @@ position: absolute;
 
     width: 30px;
     height: 30px;
+    background-color: transparent;
     padding: 0;
     border-radius: 50%;
     border-color: rgba(0, 0, 0, 0.1);
     background-color: #FFFFFF;
+    border:1px solid;
 
 }
