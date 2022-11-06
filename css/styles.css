@@ -146,7 +146,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-radius: 2px;
     background-color: var(--accent-color);
     opacity: 0;
-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+transition: color 250ms var(--timing-function);
 
 
 }
@@ -196,7 +196,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+transition: color 250ms var(--timing-function);
 }
 
 .contact .item:not(:last-child)
@@ -274,7 +274,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     padding: 10px 32px;
     min-width: 200px;
 
-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+transition: color 250ms var(--timing-function);
 }
 
 .button-secondary {
@@ -287,7 +287,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
 
     padding: 6px 22px;
 
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+transition: color 250ms var(--timing-function);
 }
 
 .button-secondary:not(:last-child) {
@@ -459,7 +459,7 @@ color: var(--button-white-color);
     font-size: 14px;
     line-height: 1.71;
 
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+transition: color 250ms var(--timing-function);
 }
 
 .address-list .mail:hover,
@@ -476,7 +476,7 @@ color: var(--button-white-color);
     text-decoration: none;
     font-size: 14px;
     line-height: 1.71;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+transition: color 250ms var(--timing-function);
 }
 
 
@@ -712,7 +712,7 @@ position: absolute;
     fill: #afb1b8;
     padding: 12px;
     display: flex;
-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+transition: color 250ms var(--timing-function);
 }
 
 .team-img-description {
@@ -753,7 +753,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+transition: color 250ms var(--timing-function);
 
    
 }
@@ -780,7 +780,7 @@ margin-right: 30px;
     align-items: center;
     justify-content: center;
 
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+transition: color 250ms var(--timing-function);
 }
 
 .clients-icon {
@@ -830,8 +830,8 @@ fill:var(--button-white-color);
     color: var(--button-white-color);
     margin-bottom: 20px;
     text-transform: uppercase;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    
+ 
+    transition: color 250ms var(--timing-function);
  
 }
 
