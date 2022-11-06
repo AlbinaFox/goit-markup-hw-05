@@ -127,6 +127,7 @@ color: var(--black);
     padding-top: 28px;
     padding-bottom: 28px;
 
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
 }
 
 .site-nav .current {
@@ -145,6 +146,7 @@ color: var(--black);
     border-radius: 2px;
     background-color: var(--accent-color);
     opacity: 0;
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
 
 
 }
@@ -194,6 +196,7 @@ color: var(--black);
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
 }
 
 .contact .item:not(:last-child)
@@ -270,6 +273,8 @@ color: var(--black);
 
     padding: 10px 32px;
     min-width: 200px;
+
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
 }
 
 .button-secondary {
@@ -281,7 +286,8 @@ color: var(--black);
     line-height: 1.62;
 
     padding: 6px 22px;
-    transition: color 250ms var(--timing-function);
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
 }
 
 .button-secondary:not(:last-child) {
@@ -452,6 +458,8 @@ color: var(--button-white-color);
     text-decoration: none;
     font-size: 14px;
     line-height: 1.71;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
 }
 
 .address-list .mail:hover,
@@ -468,6 +476,7 @@ color: var(--button-white-color);
     text-decoration: none;
     font-size: 14px;
     line-height: 1.71;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
 }
 
 
@@ -770,6 +779,8 @@ margin-right: 30px;
     height: 100%;
     align-items: center;
     justify-content: center;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
 }
 
 .clients-icon {
