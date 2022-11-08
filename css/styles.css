@@ -812,7 +812,7 @@ margin-right: 10px;
 fill: var(--accent-color);
 }
 
-.footer-social-links{
+.-links{
 fill:var(--button-white-color);
 }
 
@@ -853,7 +853,8 @@ background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     padding: 12px;
     display: flex;
-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-links:hover,
